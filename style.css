@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS 1p", sans-serif;
+  transition: 0.3s all;
+}
+html{
+    height: 100%;
+    width: 100%;
+  }
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title h3 {
+  font-weight: 300;
+  padding: 10px 0px;
+}
+.title i {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.text {
+  margin: 10px 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(156, 156, 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main {
+  width: 500px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 5px;
+}
+.header {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius:5px ;
+}
+.section input {
+  width: 90%;
+  border: none;
+  border-radius: 1px solid black;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin: 10px 5px;
+  text-align: center;
+  outline: none;
+}
+.btn {
+  width: 90%;
+  border: none;
+  border-radius: 1px solid black;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin: 10px 5px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover {
+  font-size: 14px;
+}
+.btn:active {
+  font-size: 14px;
+  background: rgba(5, 174, 216, 0.8);
+}
+/* aside */
+.header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-info img {
+  width: 250px;
+  margin: 0px;
+}
+.degre,
+.position,
+.cityname {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.degre h1 {
+  font-size: 70px;
+}
+
+.hidden {
+  display: none;
+}
+.alertdiv {
+  display: none;
+  padding: 8px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 5px 0px;
+}
+sup {
+  
+}
+
+.error {
+  display: block;
+  background-color: rgb(240, 148, 148);
+}
+.succses {
+  display: block;
+  background-color: rgb(81, 233, 145);
+}
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.info-footer {
+  display: flex;
+  margin: 10px;
+  font-size: 14px;
+}
+.info-footer img {
+  width: 30px;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container{
+  background-color: #007ced;
+    background: linear-gradient(to bottom, #007ced 40%,#cce7ff 600%);
+}
+#cloud-intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+              url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+              url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+    animation: wind 30s linear infinite;
+}
+@keyframes wind{
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+
+}
